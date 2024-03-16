@@ -1,9 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://kit.fontawesome.com/55c2713c71.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <style>
+        * {box-sizing: border-box;}
+
+/* Style the input container */
+.input-container {
+  display: flex;
+  width: 50%;
+  margin-bottom: 15px;
+}
+
+/* Style the form icons */
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+/* Style the input fields */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+    </style>
 </head>
 <body>
     <a href="../index.html">Home page</a>
@@ -22,6 +68,52 @@
         <img src="../Contact_page/images/Whtsapp.png" alt="" width="100">
         <li> Contact no: 0341-9648342 </li>
     </ul>
+
+    <form >
+        <b>Name: </b> <input type="text" name=" " placeholder="First Name" required maxlength="8">  
+        <input type="text" name=" "placeholder="last Name" required maxlength="8" > <br> <br> 
+        <b>Company : </b><input type= "company" placeholder="Enter your Company Name" company > <br> <br>
+        <b>Email :</b> <input type="email" placeholder="Example@gmail.com" required> <br> <br>
+        <b>Password :</b> <input type="password" placeholder="Enter your gmail password" required name="password" maxlength="10 include upper case lower case both"> <br> <br>
+        <b>contact No :</b> <input type="contact" placeholder="phone contact must" required maxlength="12"> <br> <br> 
+        <p>please select your gender;
+        <br>
+        <input type="radio" name="gender" id="Male"/> Male
+        <input type="radio" name="gender" id="Female"/> Female
+        </p>
+        subjects :
+        <select name= "subjects" id="subjects">
+        <option value="Automata"selected="selected">Automata</option>
+        <option value="software Engineering">software Engineering</option>
+        <option value="multiveriate calculas">multiveriate calculas</option>
+        <option value="Artifical intelligence">Artifical intelligence</option>
+       </select> <br><br>
+       <p> Are you an existing customer?</p>
+       <input type="radio" name="customer" id="yes"/> Yes
+       <input type="radio" name= "customer" id="No"/> No<br><br>
+       <p>Submit your form here..!</p>
+       <input type="submit" name="submit" id="">
+         </form>
+
+         <form action="/action_page.php">
+            <h2>Login Details</h2>
+            <div class="input-container">
+              <i class="fa fa-user icon"></i>
+              <input class="input-field" type="text" placeholder="Username" name="usrnm">
+            </div>
+          
+            <div class="input-container">
+              <i class="fa fa-envelope icon"></i>
+              <input class="input-field" type="text" placeholder="Email" name="email">
+            </div>
+          
+            <div class="input-container">
+              <i class="fa fa-key icon"></i>
+              <input class="input-field" type="password" placeholder="Password" name="psw">
+            </div>
+          
+            <button type="submit" class="btn">Register</button>
+          </form>
     
 </body>
 </html>
